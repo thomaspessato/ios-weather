@@ -1,0 +1,27 @@
+.main-card {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    /* height: 200px; */
+    border-bottom: 1px solid black;
+    flex: 1;
+}
+
+.main-card__status {
+    color: white;
+    margin-top: 5px;
+    margin-bottom: 10px;
+}
+
+.main-card__temperature {
+    color: white;
+    font-size: 110px;
+}
+
+.main-card__city {
+    color: white;
+    font-size: 40px;
+    font-weight: 400;
+    margin: 0;
+}
