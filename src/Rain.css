@@ -1,1 +1,10 @@
 
+.rain {
+    background: rgb(17, 17, 17);
+    position: absolute;
+    bottom: 0;
+    top: 0;
+    left: 0;
+    right: 0;
+    position: fixed;
+}

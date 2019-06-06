@@ -4,8 +4,16 @@
     justify-content: center;
     align-items: center;
     /* height: 200px; */
-    border-bottom: 1px solid black;
     flex: 1;
+}
+
+.main-card__content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    flex: 1;
+    position: relative;
 }
 
 .main-card__status {

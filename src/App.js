@@ -6,10 +6,9 @@ import MainCard from "./MainCard";
 class App extends React.Component {
   render() {
     return (
-      <div className="App">
-        <Rain background={"#111"} lineWidth={0.8} rainAmount={100}></Rain>
-        <div style={{background: "rgba(0,0,0,0.3)"}} class="weather-app">
-          <MainCard city={"Sydney"}></MainCard>
+      <div style={{background: "rgba(0,0,0,0.3)"}} className="App">
+        <div class="weather-app">
+          <MainCard></MainCard>
         </div>
       </div>
     );

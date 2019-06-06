@@ -1,10 +1,15 @@
 import React from 'react';
+import './Rain.css';
 
 class Rain extends React.Component {
     
     constructor(props) {
         super(props);
         this.draw = this.draw.bind(this);
+    }
+
+    componentWillUnmount() {
+        console.log();
     }
     
     makeItRain() {
@@ -93,7 +98,7 @@ class Rain extends React.Component {
     
     render() {
         return (
-            <div style={{background:this.props.background}}>
+            <div class="rain" style={{background:this.props.background}}>
                 <canvas id="bg-canvas"></canvas>
             </div>
             )
