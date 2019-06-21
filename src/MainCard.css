@@ -33,3 +33,39 @@
     font-weight: 400;
     margin: 0;
 }
+
+.main-card form {
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+
+
+.main-card__city-form {
+    /* display: flex; */
+    /* font-size: 32px; */
+    /* display: flex; */
+}
+
+.main-card__city-query {
+    border: none;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.19);
+    text-align: left;
+    background: transparent;
+    color: white;
+}
+
+.main-card__search {
+    background: white;
+    border: none;   
+    color: black;
+    border: 1px solid white;
+    transition: all 200ms ease;
+    cursor: pointer;
+}
+
+.main-card__search:hover {
+    background: lightgray;
+    border-color: lightgray; 
+}
+
