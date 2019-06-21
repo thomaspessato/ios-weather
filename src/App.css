@@ -75,7 +75,7 @@ body {
 
 @media(max-width: 400px) {
   .hour-card {
-      font-size: 1.2em;
-      min-width: 70px;
+      font-size: 2em;
+      min-width: 100px;
   }
 }
