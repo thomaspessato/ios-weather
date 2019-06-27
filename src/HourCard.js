@@ -33,7 +33,10 @@ class HourCard extends React.Component {
         return (
             <div class="hour-card">
                 <span class="hour-card__time">{this.props.time}</span>
-                {weather}
+                <div class="hour-card__weather-container">
+                    <span class="hour-card__probability">30%</span>
+                    {weather}
+                </div>
                 <span class="hour-card__temperature">{this.props.temperature}</span>
             </div>
         )
