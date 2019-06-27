@@ -3,7 +3,7 @@
     /* justify-content: space-around; */
     align-items: center;
     font-size: 2em;
-    margin: 15px 0px;
+    margin: 6px 10px;
 }
 
 .day-card__day {
@@ -32,12 +32,16 @@
     text-align: center;
 }
 
+.day-card div .day-card__min-temp {
+    opacity: 0.5;
+}
+
 @media(max-width: 400px) {
     .day-card {
         display: flex;
         /* justify-content: space-around; */
         align-items: center;
-        font-size: 19px;
-        margin: 15px 10px;
+        font-size: 18px;
+        margin: 6px 10px;
     }
 }

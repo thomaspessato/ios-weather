@@ -15,8 +15,27 @@
     color: goldenrod;
 }
 
-.hour-card span {
-    margin: 15px 0;
+.hour-card .hour-card__time {
+
+}
+
+.hour-card .hour-card__temperature {
+    font-size: 22px;
+}
+
+
+.hour-card .hour-card__weather-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.hour-card .hour-card__probability {
+    color: #68b5d9;
+    font-weight: 600;
+    font-size: 15px;
+    position: relative;
 }
 
 @media(max-width: 400px) {
@@ -26,7 +45,7 @@
     
     .hour-card {
         display: flex;
-        height: 240px;
+        height: 110px;
         flex: 1;
         align-items: center;
         flex-direction: column;

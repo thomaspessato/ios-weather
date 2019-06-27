@@ -1,5 +1,11 @@
-* {
-  font-family: 'Comfortaa', cursive;
+@font-face {
+  font-family: "HelveticaNeue";
+  src: url("./HelveticaNeue-Thin.otf");
+}
+
+body {
+  font-family: "HelveticaNeue", sans-serif; 
+  font-weight: 300;
 }
 
 body {
@@ -36,25 +42,26 @@ body {
   position: relative;
   color: white;
   overflow: auto;
-  max-width: 1340px;
-  margin: 20px auto;
   width: 100%;
-  /* border-bottom: 1px solid white; */
+  border-bottom: 1px solid rgba(255, 255, 255, 0.12156862745098039);;
+  padding: 13px 0;
+  margin: 0;
+  border-top: 1.2px solid rgba(255, 255, 255, 0.12156862745098039);
 }
 
 .main-card__daily {
-    position: relative;
-    display: flex;
-    flex-direction: column;
-    color: white;
-    border-top: 1px solid #c6c6c64f;
-    margin-bottom: 20px;
-    margin-top: 20px;
-    padding-top: 30px;
-    max-width: 1340px;
-    width: 100%;
-    justify-content: center;
-    margin: 0 auto;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  color: white;
+  margin-bottom: 20px;
+  /* margin-top: 20px; */
+  padding-top: 0px;
+  max-width: 1340px;
+  width: 100%;
+  justify-content: center;
+  margin: 0 auto;
+  border-bottom: 1.2px solid rgba(255, 255, 255, 0.12156862745098039);
 }
 
 

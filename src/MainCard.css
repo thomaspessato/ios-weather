@@ -4,7 +4,9 @@
     justify-content: center;
     align-items: center;
     /* height: 200px; */
-    flex: 1;
+    flex: 1 1;
+    /* min-height: 340px; */
+    min-height: 360px;
 }
 
 .main-card__content {
@@ -18,13 +20,13 @@
 
 .main-card__status {
     color: white;
-    margin-top: 5px;
-    margin-bottom: 10px;
+    /* margin-bottom: 10px; */
+    font-size: 17px;
 }
 
 .main-card__temperature {
     color: white;
-    font-size: 110px;
+    font-size: 121px;
 }
 
 .main-card__city {

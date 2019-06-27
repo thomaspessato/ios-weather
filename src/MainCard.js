@@ -46,7 +46,7 @@ class MainCard extends React.Component {
     }
 
     kelvinToCelcius(temp) {
-        return (temp - 273.15).toFixed(1);
+        return (temp - 273.15).toFixed(0);
     }
 
     handleSubmit(event) {
@@ -71,35 +71,44 @@ class MainCard extends React.Component {
             <div class="main-card">
                 <h2 class="main-card__city">{this.state.data.name}</h2>
                 <span class="main-card__status">{this.state.data.weather[0].main}</span>
-                <span class="main-card__temperature">{this.kelvinToCelcius(this.state.data.main.temp)}</span>
+                <span class="main-card__temperature">{this.kelvinToCelcius(this.state.data.main.temp)}°</span>
             </div>
         
             switch (this.state.data.weather[0].main.toUpperCase()) {
                 case "RAIN":
-                    weatherType = <Rain background={"rgb(33, 54, 70)"} lineWidth={0.8} rainAmount={100}></Rain>;
+                    weatherType = <Rain lineWidth={0.8} rainAmount={100}></Rain>;
                     break;
                 case "CLEAR":
-                    weatherType = <Clear background={"rgb(33, 54, 70)"}></Clear>;
+                    weatherType = <Rain lineWidth={1} rainAmount={200}></Rain>;
+                    break;
                 default:
-                    weatherType = "";
+                    weatherType = <Rain lineWidth={1} rainAmount={200}></Rain>;
                     break;
             }
         }
-
-       
-
 
         return (
             <div class="main-card">
                 {weatherType}                
                 <div class="main-card__content">
-                    <form class="main-card__city-form" onSubmit={this.handleSubmit}>
+                    {/* <form class="main-card__city-form" onSubmit={this.handleSubmit}>
                         <label>
                         <input class="main-card__city-query" type="text" placeholder="City name" value={this.state.value} onChange={this.handleChange} />
                         </label>
                         <input class="main-card__search" type="submit" value="Search" />
-                    </form>
+                    </form> */}
                     {weatherInfo}
+                </div>
+                <div class="main-card__today-info">
+                    <div>
+                        <span>Thursday</span>
+                        <span>TODAY</span>
+                    </div>
+                    <div>
+                        <span>10</span>
+                        <span>2</span>
+                    </div>
+                    
                 </div>
             </div>
         );
