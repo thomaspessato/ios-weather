@@ -16,11 +16,19 @@
 }
 
 .hour-card .hour-card__time {
-
+    flex: 1 1;
+    align-items: center;
+    display: flex;
+    font-size: 16px;
+    font-weight: 600;
 }
 
 .hour-card .hour-card__temperature {
-    font-size: 22px;
+    font-size: 19px;
+    font-weight: bold;
+    flex: 1;
+    display: flex;
+    align-items: center;
 }
 
 
@@ -29,6 +37,7 @@
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    flex: 1;
 }
 
 .hour-card .hour-card__probability {
@@ -36,12 +45,10 @@
     font-weight: 600;
     font-size: 15px;
     position: relative;
+    display: none;
 }
 
-@media(max-width: 400px) {
-    .hour-card {
- 
-    }
+@media(max-width: 700px) {
     
     .hour-card {
         display: flex;

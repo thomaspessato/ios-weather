@@ -42,6 +42,7 @@ body {
   position: relative;
   color: white;
   overflow: auto;
+  -webkit-overflow-scrolling: touch;
   width: 100%;
   border-bottom: 1px solid rgba(255, 255, 255, 0.12156862745098039);;
   padding: 13px 0;
@@ -80,7 +81,7 @@ body {
 
 
 
-@media(max-width: 400px) {
+@media(max-width: 700px) {
   .hour-card {
       font-size: 2em;
       min-width: 100px;
