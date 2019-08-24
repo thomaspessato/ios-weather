@@ -1,16 +1,16 @@
 {
   "files": {
-    "main.css": "/ios-weather/static/css/main.7b1b8bc3.chunk.css",
-    "main.js": "/ios-weather/static/js/main.26afca1d.chunk.js",
-    "main.js.map": "/ios-weather/static/js/main.26afca1d.chunk.js.map",
+    "main.css": "/ios-weather/static/css/main.afb16d59.chunk.css",
+    "main.js": "/ios-weather/static/js/main.26c214be.chunk.js",
+    "main.js.map": "/ios-weather/static/js/main.26c214be.chunk.js.map",
     "runtime~main.js": "/ios-weather/static/js/runtime~main.379efb22.js",
     "runtime~main.js.map": "/ios-weather/static/js/runtime~main.379efb22.js.map",
     "static/js/2.2668f2aa.chunk.js": "/ios-weather/static/js/2.2668f2aa.chunk.js",
     "static/js/2.2668f2aa.chunk.js.map": "/ios-weather/static/js/2.2668f2aa.chunk.js.map",
     "index.html": "/ios-weather/index.html",
-    "precache-manifest.f11418a29b12f855dd831d19a40078f9.js": "/ios-weather/precache-manifest.f11418a29b12f855dd831d19a40078f9.js",
+    "precache-manifest.cfec55178653038f5a5cab3361bf1dbe.js": "/ios-weather/precache-manifest.cfec55178653038f5a5cab3361bf1dbe.js",
     "service-worker.js": "/ios-weather/service-worker.js",
-    "static/css/main.7b1b8bc3.chunk.css.map": "/ios-weather/static/css/main.7b1b8bc3.chunk.css.map",
+    "static/css/main.afb16d59.chunk.css.map": "/ios-weather/static/css/main.afb16d59.chunk.css.map",
     "static/media/App.css": "/ios-weather/static/media/HelveticaNeue-Thin.8625837a.otf"
   }
 }
