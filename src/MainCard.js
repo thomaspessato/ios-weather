@@ -9,19 +9,14 @@ class MainCard extends React.Component {
 
     constructor(props) {
         super(props);
-        this.state = {value: 'New York'};
+        this.state = {};
         this.handleChange = this.handleChange.bind(this);
         this.handleSubmit = this.handleSubmit.bind(this);
     }
 
     componentDidMount() {
-        console.log("fetching data");
-        this.getCityWeather(this.state.value).then((data) => {
+        this.getCityWeather(this.props.city).then((data) => {
             this.setState({data});
-        })
-
-        this.getCityWeatherDays(7, this.state.value).then((data) => {
-            console.log(data);
         })
     }
 
@@ -33,13 +28,7 @@ class MainCard extends React.Component {
         })
     }
 
-    getCityWeatherDays(days, cityName) {
-        return new Promise((resolve, reject) => {
-            fetch(API.baseUrl+"forecast?q="+cityName+"&units=metric&cnt="+days+"&appid="+API.appid)
-            .then(response => response.json())
-            .then(data => resolve(data), () => { reject() });
-        })
-    }
+
 
     handleChange(event) {
         this.setState({ value: event.target.value });
@@ -50,21 +39,19 @@ class MainCard extends React.Component {
     }
 
     handleSubmit(event) {
-        this.getCityWeather(this.state.value).then((data) => {
+        this.getCityWeather(this.props.city).then((data) => {
+            console.log(data);
             this.setState({data});
         }, () => { console.log('City not found') });
 
-        this.getCityWeatherDays(7, this.state.value).then((data) => {
-            console.log(data);
-        })
-
         event.preventDefault();
     }
-
+    
     render () {
 
         let weatherType = null;
         var weatherInfo = null;
+
         
         if(this.state.data) {
             weatherInfo = 
