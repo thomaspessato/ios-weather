@@ -1,13 +1,13 @@
 
-
 .hour-card {
     display: flex;
-    /* height: 240px; */
+    height: 110px;
     flex: 1 1;
     align-items: center;
     flex-direction: column;
     justify-content: space-around;
-    font-size: 1.7em;
+    font-size: 1.2em;
+    min-width: 70px;
     transition: all 200ms ease;
 }
 
@@ -48,16 +48,5 @@
     display: none;
 }
 
-@media(max-width: 700px) {
     
-    .hour-card {
-        display: flex;
-        height: 110px;
-        flex: 1;
-        align-items: center;
-        flex-direction: column;
-        justify-content: space-around;
-        font-size: 1.2em;
-        min-width: 70px;
-    }
-}
+  
